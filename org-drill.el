@@ -1759,10 +1759,10 @@ Consider reformulating the item to make it easier to remember.\n"
     (save-window-excursion
       (let ((buf
              (org-drill-response-get-buffer-create)))
-        (select-window
-         (display-buffer-below-selected buf nil))
 
         ;; Make +popup rules in doom-emacs work
+        ;; (select-window
+        ;;  (display-buffer-below-selected buf nil))
         (pop-to-buffer buf)
 
         ;; Store the current session in a variable, so that it can
