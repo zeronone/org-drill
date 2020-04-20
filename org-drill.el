@@ -1761,6 +1761,10 @@ Consider reformulating the item to make it easier to remember.\n"
              (org-drill-response-get-buffer-create)))
         (select-window
          (display-buffer-below-selected buf nil))
+
+        ;; Make +popup rules in doom-emacs work
+        (pop-to-buffer buf)
+
         ;; Store the current session in a variable, so that it can
         ;; be picked up by the when we leave the buffer
         (setq-local org-drill-current-session session)
